@@ -1,0 +1,42 @@
+<input type="checkbox" id="popup__1" class="popup__check" />
+		<div class="popup__base">
+			<label for="popup__1" class="popup__bg"></label>
+			<div class="popup__inner">
+				<div class="popup__calign">
+					<label for="popup__1" class="popup__close">+</label>
+				</div>
+				<div class="popup__textbox">
+					<h1>suppression</h1>
+					<p>
+                                        <form action="add_user.php" method="post">
+                                                <div class="col-md-6">
+                                                    <input type="text" name="nom" placeholder="Nom*" id="input_cus_add"/>
+                                                    <select name="liste_classe" id="input_cus_add">
+                                                        <?php include('functions_include/liste_classe.php');?>
+                                                    </select>
+                                                    <select name="liste_type" id="input_cus_add">
+                                                        <option value="">Type</option>
+                                                        <option value="0">Elève</option>
+                                                        <option value="1">Professeur</option>
+                                                        <option value="2">Administrateur</option>
+                                                    </select>
+                                                    <input type="text" name="identifiant" placeholder="Identifiant" id="input_cus_add"/>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" name="prenom" placeholder="Prénom*" id="input_cus_add"/>
+                                                    <select name="liste_sexe" id="input_cus_add">
+                                                        <option value="">Sexe</option>
+                                                        <option value="h">Homme</option>
+                                                        <option value="f">Femme</option>
+                                                    </select>
+                                                    <input type="date" name="date" id="input_cus_add"/>
+                                                    <input type="password" name="mdp" placeholder="Mot de passe" id="input_cus_add"/>
+                                                </div>
+                                            <button class="but_cus">Supprimer</button>
+                                            </form> 
+					<p>
+				</div>
+			</div>
+		</div>
+		
+		<label class="trigger btn btn-danger" for="popup__1">Suppimer le groupe</label>

@@ -1,0 +1,21 @@
+##=========================================
+##Nom de la base : GestionCrossAnnuel    ==
+##Date de création  : 07/03/2016 11:45   ==
+##Copyright : Maxime Bordas              ==
+## Version : 1                           ==
+##=========================================
+
+##==================================
+##Jeu d'essai                     ==
+##==================================
+insert into utilisateur (login, mdp, type_utilisateur, prenom, nom, sexe, date_naissance, id_classe, id_point, id_groupe, nb_points_malus, nb_points_bonus)
+values ('oabil','eleve','eleve','abil','osman','m',1998-01-05,'TSTMG',0,0,0,0)
+values ('tachiary','eleve','eleve','achiary','tristan','m',1998-02-25,'TS1',0,0,0,0)
+values ('cahdjila','eleve','eleve','ahdjila','caroline','f',1999-08-14,'2nd4',0,0,0,0)
+values ('aakabo','eleve','eleve','akabo','armance','f',1998-08-25,'Tes2',0,0,0,0)
+values ('dako','eleve','eleve','ako','doriane','f',1997-08-12,'TSTMG',0,0,0,0)
+values ('saliano','eleve','eleve','alioano','sarah','f',1999-09-30,'1ereL',0,0,0,0)
+values ('lallain','eleve','eleve','lucas','allain','m',2000-08-06,'2nd6',0,0,0,0)
+values ('vallouche','eleve','eleve','allouche','victoria','f',1997-07-10,'TSTMG',0,0,0,0)
+values ('malouache','eleve','eleve','alouache','magot','f',1998-08-16,'TES1',0,0,0,0)
+values ('aalvergne','eleve','eleve','alvergne','adrian','m',1998-05-23,'TS1',0,0,0,0)

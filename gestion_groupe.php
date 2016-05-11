@@ -91,6 +91,7 @@ $reqprof = $base->prepare("SELECT utilisateur_nom FROM utilisateur WHERE utilisa
             <td>Classe</td>
             <td>Points</td>
             <td>Sexe</td>
+            <td>Type du groupe</td>
             <td>Supp</td>
         <?php
         $point_total = 0 ;
@@ -112,6 +113,7 @@ $reqprof = $base->prepare("SELECT utilisateur_nom FROM utilisateur WHERE utilisa
             $reqclasse->execute();
             $reqprof->execute();
             $classe_nom = $reqclasse->fetch();
+            $typeGroupe = $reqgroup->fetch();
             $prof_nom = $reqprof->fetch();
             $nb_points = $reqpoints->fetch();// insertion des points dans le tableau
             $point_total = $point_total + $nb_points[0];//nombre points totaux
@@ -127,6 +129,7 @@ $reqprof = $base->prepare("SELECT utilisateur_nom FROM utilisateur WHERE utilisa
             echo "<td contenteditable='true'>$value[classe_libelle]</td>";
             echo "<td contenteditable='true'>$value[type_groupe_points]</td>";
             echo "<td contenteditable='true'>$sexe</td>";
+            echo "<td contenteditable='true'>$typeGroupe[0]</td>";
             echo "<td class=\"no-padding\"><input class=\"full-content no-margin\" type=\"checkbox\" name=\"supp[]\" value=\"$value[utilisateur_id]\"/></td>";
             echo "</tr>";
         }    
